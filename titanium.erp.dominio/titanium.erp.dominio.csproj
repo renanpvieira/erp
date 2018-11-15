@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5A0AD6D-763C-4EE2-97F0-481D13951A73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>titanium.erp.dominio</RootNamespace>
+    <AssemblyName>titanium.erp.dominio</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dominios\Chamado.cs" />
+    <Compile Include="dominios\ChamadoItem.cs" />
+    <Compile Include="dominios\ChamadoStatus.cs" />
+    <Compile Include="dominios\Cidade.cs" />
+    <Compile Include="dominios\ContatoEmail.cs" />
+    <Compile Include="dominios\ContatoTelefone.cs" />
+    <Compile Include="dominios\Empresa.cs" />
+    <Compile Include="dominios\Endereco.cs" />
+    <Compile Include="dominios\Estoque.cs" />
+    <Compile Include="interfaces\repositorios\IChamadoItemRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IChamadoRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IChamadoStatusRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\ICidadeRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IContatoEmailRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IContatoTelefoneRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IEmpresaRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IEnderecoRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IEstoqueRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IMenuAdminRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IMovimentoFiscalRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IMovimentoItemRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IMovimentoRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IMovimentoStatusRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IOperacaoRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IParceiroRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IProdutoRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\base\IRepositorioBase.cs" />
+    <Compile Include="interfaces\repositorios\IStatusMovimentoRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IUFRepositorio.cs" />
+    <Compile Include="interfaces\repositorios\IUsuarioMenuAdminRepositoio.cs" />
+    <Compile Include="interfaces\repositorios\IUsuarioRepositorio.cs" />
+    <Compile Include="dominios\MenuAdmin.cs" />
+    <Compile Include="dominios\Movimento.cs" />
+    <Compile Include="dominios\MovimentoFiscal.cs" />
+    <Compile Include="dominios\MovimentoItem.cs" />
+    <Compile Include="dominios\MovimentoStatus.cs" />
+    <Compile Include="dominios\Operacao.cs" />
+    <Compile Include="dominios\Parceiro.cs" />
+    <Compile Include="dominios\Produto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="dominios\StatusMovimento.cs" />
+    <Compile Include="dominios\UF.cs" />
+    <Compile Include="dominios\Usuario.cs" />
+    <Compile Include="dominios\UsuarioMenuAdmin.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

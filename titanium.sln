@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "titanium.erp.dominio", "titanium.erp.dominio\titanium.erp.dominio.csproj", "{B5A0AD6D-763C-4EE2-97F0-481D13951A73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "titanium.erp.data", "titanium.erp.data\titanium.erp.data.csproj", "{EEB5F3E7-62FE-438D-B8EB-55448F899C7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "titanium.erp.dto", "titanium.erp.dto\titanium.erp.dto.csproj", "{B84D944B-B20F-484D-B447-EDAA49E644C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "titanium.erp.negocio", "titanium.erp.negocio\titanium.erp.negocio.csproj", "{DA01E8BF-B6B6-4163-9237-85A0527DACEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "titanium.erp.api", "titanium.erp.api\titanium.erp.api.csproj", "{CDF01F39-70EE-4AFF-8356-ABEF89690CE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Artefatos", "Artefatos", "{BE088D6F-A147-4C1B-AEB6-9857088330CB}"
+	ProjectSection(SolutionItems) = preProject
+		Sites.txt = Sites.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5A0AD6D-763C-4EE2-97F0-481D13951A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A0AD6D-763C-4EE2-97F0-481D13951A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A0AD6D-763C-4EE2-97F0-481D13951A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A0AD6D-763C-4EE2-97F0-481D13951A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB5F3E7-62FE-438D-B8EB-55448F899C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB5F3E7-62FE-438D-B8EB-55448F899C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB5F3E7-62FE-438D-B8EB-55448F899C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB5F3E7-62FE-438D-B8EB-55448F899C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84D944B-B20F-484D-B447-EDAA49E644C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84D944B-B20F-484D-B447-EDAA49E644C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84D944B-B20F-484D-B447-EDAA49E644C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84D944B-B20F-484D-B447-EDAA49E644C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA01E8BF-B6B6-4163-9237-85A0527DACEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA01E8BF-B6B6-4163-9237-85A0527DACEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA01E8BF-B6B6-4163-9237-85A0527DACEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA01E8BF-B6B6-4163-9237-85A0527DACEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF01F39-70EE-4AFF-8356-ABEF89690CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF01F39-70EE-4AFF-8356-ABEF89690CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF01F39-70EE-4AFF-8356-ABEF89690CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF01F39-70EE-4AFF-8356-ABEF89690CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3A50A4B-7E54-4310-8F7D-3EE256113EB2}
+	EndGlobalSection
+EndGlobal

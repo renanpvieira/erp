@@ -1,0 +1,13 @@
+WEB API
+http://www.tutorialsteacher.com/webapi/create-web-api-project
+
+
+IOC
+http://www.tutorialsteacher.com/ioc/property-injection-using-unity-container
+https://medium.com/@fabiosilvalima
+
+
+ANGULAR
+https://medium.com/@danilodev.silva
+https://blog.angular.io/
+https://medium.com/trainingcenter/desenvolvimento/home
