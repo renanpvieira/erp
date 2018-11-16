@@ -1,10 +1,17 @@
-﻿using titanium.erp.dominio;
+﻿using System.Data;
+using titanium.erp.dominio;
 using titanium.erp.dominio.interfaces.repositorios;
 
 namespace titanium.erp.data
 {
     public class UsuarioRepositorio : RepositorioBase<Usuario>, IUsuarioRepositorio
     {
+        public UsuarioRepositorio(IDbTransaction transaction)
+            :base(transaction)
+        {
+            
+        }
+
         public Usuario BuscarPorLogin(string login)
         {
             return null;

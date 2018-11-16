@@ -6,5 +6,6 @@ namespace titanium.erp.negocio.interfaces
     {
         LoginDTO Logar(string login);
         void Deslogar();
+
     }
 }

@@ -1,12 +1,19 @@
-﻿using System.Web.Http;
+﻿using System;
+using System.Web.Http;
+using titanium.erp.negocio.interfaces;
 
 namespace titanium.erp.api.Controller
 {
-    public class LoginController : ApiController
+    public class LoginController : BaseController
     {
+      
         public string Get()
         {
-            return "Hello World";
+           var x = this.LoginNegocio.Value.Logar("teste");
+
+            return "";
         }
+
+      
     }
 }

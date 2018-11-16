@@ -1,96 +1,55 @@
 ﻿//using NLog;
 using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
+using System.Threading.Tasks;
 using titanium.erp.dominio.interfaces.repositorios;
+using System.Data;
+using Dapper;
+using Dapper.Contrib.Extensions;
 
 namespace titanium.erp.data
 {
     /* tem que ser abstrado pra nao ser chamada  */
     public abstract class RepositorioBase<T> : IRepositorioBase<T> where T : class
     {
+        private readonly IDbTransaction _transaction;
+
+        public RepositorioBase(IDbTransaction transaction)
+        {
+            _transaction = transaction;
+        }
+
+        public virtual Task AddAsync(T entity)
+        {
+            return _transaction.Connection.InsertAsync(entity, _transaction);
+        }
         
-        public T BuscarPorId(int id)
+        public virtual Task UpdateAsync(T entity)
+        {
+            return _transaction.Connection.UpdateAsync(entity, _transaction);
+        }
+
+        public virtual Task DeleteAsync(T entity)
+        {
+            return _transaction.Connection.DeleteAsync(entity, _transaction);
+        }
+
+        public virtual Task DeleteAsync(params object[] keyValues)
+        {
+            throw new NotImplementedException();
+        }
+        
+        public virtual ICollection<T> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public ICollection<T> BuscarTodos()
+        public virtual Task<T> GetByIdAsync(params object[] keyValues)
         {
             throw new NotImplementedException();
         }
-
-        public ICollection<T> BuscarTodos(Expression<Func<T, int>> order)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<T> BuscarTodos(int inicio, int tamanho)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<T> BuscarTodos(Expression<Func<T, int>> order, int inicio, int tamanho)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<T> BuscarTodos(Expression<Func<T, bool>> exprecao)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<T> BuscarTodos(Expression<Func<T, int>> order, Expression<Func<T, bool>> exprecao)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<T> BuscarTodos(int inicio, int tamanho, Expression<Func<T, bool>> exprecao)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<T> BuscarTodos(Expression<Func<T, int>> order, int inicio, int tamanho, Expression<Func<T, bool>> exprecao)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Deletar(T obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Deletar(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Deletar(Expression<Func<T, bool>> exprecao)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int RetornaQtdRegistros()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int RetornaQtdRegistros(Expression<Func<T, bool>> exprecao)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Salvar(T obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int SalvarMudancas()
+        
+        public virtual void Dispose()
         {
             throw new NotImplementedException();
         }

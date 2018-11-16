@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace titanium.erp.api.Cofiguration
+namespace titanium.erp.api.Configuration
 {
     public class WebAPIConfig
     {

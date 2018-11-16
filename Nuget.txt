@@ -1,0 +1,7 @@
+API
+Install-Package SimpleInjector.Integration.WebApi
+Install-Package SimpleInjector <- instala automaticamnete quando o de cima é instalado
+
+Data
+Install-Package Dapper
+Install-Package Dapper.Contrib

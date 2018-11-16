@@ -12,7 +12,8 @@ namespace titanium.erp.negocio
 
         public LoginDTO Logar(string login)
         {
-            throw new System.NotImplementedException();
+            return null;
         }
+
     }
 }

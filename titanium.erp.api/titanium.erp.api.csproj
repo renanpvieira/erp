@@ -90,7 +90,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\IocAPIConfig.cs" />
     <Compile Include="Configuration\WebAPIConfig.cs" />
+    <Compile Include="Controller\BaseController.cs" />
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -106,7 +108,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\titanium.erp.dto\titanium.erp.dto.csproj">
+      <Project>{b84d944b-b20f-484d-b447-edaa49e644c4}</Project>
+      <Name>titanium.erp.dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\titanium.erp.negocio\titanium.erp.negocio.csproj">
+      <Project>{DA01E8BF-B6B6-4163-9237-85A0527DACEB}</Project>
+      <Name>titanium.erp.negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

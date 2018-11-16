@@ -15,8 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "titanium.erp.api", "titaniu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Artefatos", "Artefatos", "{BE088D6F-A147-4C1B-AEB6-9857088330CB}"
 	ProjectSection(SolutionItems) = preProject
+		Nuget.txt = Nuget.txt
 		Sites.txt = Sites.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "titanium.erp.teste.console", "titanium.erp.teste.console\titanium.erp.teste.console.csproj", "{DA890BD6-6774-4C98-9DBD-32F0B54D3BA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +47,10 @@ Global
 		{CDF01F39-70EE-4AFF-8356-ABEF89690CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF01F39-70EE-4AFF-8356-ABEF89690CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDF01F39-70EE-4AFF-8356-ABEF89690CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA890BD6-6774-4C98-9DBD-32F0B54D3BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA890BD6-6774-4C98-9DBD-32F0B54D3BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA890BD6-6774-4C98-9DBD-32F0B54D3BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA890BD6-6774-4C98-9DBD-32F0B54D3BA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
