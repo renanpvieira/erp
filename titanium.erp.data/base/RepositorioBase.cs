@@ -1,5 +1,6 @@
 ﻿//using NLog;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using titanium.erp.dominio.interfaces.repositorios;
@@ -41,7 +42,7 @@ namespace titanium.erp.data
         
         public virtual ICollection<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _transaction.Connection.GetAll<T>().ToList();
         }
 
         public virtual Task<T> GetByIdAsync(params object[] keyValues)

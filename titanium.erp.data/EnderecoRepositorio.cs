@@ -5,5 +5,10 @@ namespace titanium.erp.data
 {
     public class EnderecoRepositorio : RepositorioBase<Endereco>, IEnderecoRepositorio
     {
+        public EnderecoRepositorio(System.Data.IDbTransaction transaction)
+            : base(transaction)
+        {
+
+        }
     }
 }

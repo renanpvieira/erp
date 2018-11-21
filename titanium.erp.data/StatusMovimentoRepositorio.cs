@@ -5,5 +5,10 @@ namespace titanium.erp.data
 {
     public class StatusMovimentoRepositorio: RepositorioBase<StatusMovimento>, IStatusMovimentoRepositorio
     {
+        public StatusMovimentoRepositorio(System.Data.IDbTransaction transaction)
+            : base(transaction)
+        {
+
+        }
     }
 }

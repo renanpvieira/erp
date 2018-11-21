@@ -15,12 +15,18 @@ namespace titanium.erp.teste.console
         static void Main(string[] args)
         {
 
-            var cnn = new MySqlConnection();
+            var cnn = new MySqlConnection("server=mysql22.redehost.com.br;port=41890;database=teste01;uid=teste01;password=@#Titanium18!@Prod20;SSL Mode=None");
 
             cnn.Open();
             var transacao = cnn.BeginTransaction();
 
             IUsuarioRepositorio repo = new UsuarioRepositorio(transacao);
+
+            var x = repo.GetAll();
+
+            transacao.Dispose();
+
+            cnn.Close();
 
             repo.AddAsync(new Usuario { });
 

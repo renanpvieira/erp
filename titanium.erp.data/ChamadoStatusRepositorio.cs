@@ -5,5 +5,10 @@ namespace titanium.erp.data
 {
     public class ChamadoStatusRepositorio: RepositorioBase<ChamadoStatus>, IChamadoStatusRepositorio
     {
+        public ChamadoStatusRepositorio(System.Data.IDbTransaction transaction)
+            : base(transaction)
+        {
+
+        }
     }
 }

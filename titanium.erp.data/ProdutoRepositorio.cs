@@ -5,5 +5,10 @@ namespace titanium.erp.data
 {
     public class ProdutoRepositorio : RepositorioBase<Produto>, IProdutoRepositorio
     {
+        public ProdutoRepositorio(System.Data.IDbTransaction transaction)
+            : base(transaction)
+        {
+
+        }
     }
 }

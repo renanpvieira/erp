@@ -5,5 +5,10 @@ namespace titanium.erp.data
 {
     public class MenuAdminRepositorio : RepositorioBase<MenuAdmin>, IMenuAdminRepositorio
     {
+        public MenuAdminRepositorio(System.Data.IDbTransaction transaction)
+            : base(transaction)
+        {
+
+        }
     }
 }

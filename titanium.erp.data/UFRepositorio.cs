@@ -5,5 +5,10 @@ namespace titanium.erp.data
 {
     public class UFRepositorio : RepositorioBase<UF>, IUFRepositorio
     {
+        public UFRepositorio(System.Data.IDbTransaction transaction)
+            : base(transaction)
+        {
+
+        }
     }
 }
