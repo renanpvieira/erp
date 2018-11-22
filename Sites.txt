@@ -11,3 +11,11 @@ ANGULAR
 https://medium.com/@danilodev.silva
 https://blog.angular.io/
 https://medium.com/trainingcenter/desenvolvimento/home
+
+UOW
+https://codereview.stackexchange.com/questions/164711/using-dapper-unit-of-work-in-3-tier-architecture
+https://iamrufio.com/blog/2017/04/c-unit-of-work-pattern-with-dapper/
+http://www.bradoncode.com/blog/2013/05/orms-don-reinvent-wheel.html
+https://blog.mantziaris.eu/blog/2016/10/24/the-repository-and-unit-of-work-pattern/
+https://code.msdn.microsoft.com/Dapper-and-Repository-68710cd7
+https://www.c-sharpcorner.com/article/dapper-and-repository-pattern-in-web-api/

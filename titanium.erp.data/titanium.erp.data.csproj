@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="base\IUnitOfWork.cs" />
     <Compile Include="base\RepositorioBase.cs" />
+    <Compile Include="base\UnitOfWork.cs" />
     <Compile Include="ChamadoItemRepositorio.cs" />
     <Compile Include="ChamadoRepositorio.cs" />
     <Compile Include="ChamadoStatusRepositorio.cs" />
