@@ -2,9 +2,11 @@ WEB API
 http://www.tutorialsteacher.com/webapi/create-web-api-project
 
 
-IOC
+IOC 
 http://www.tutorialsteacher.com/ioc/property-injection-using-unity-container
 https://medium.com/@fabiosilvalima
+
+https://imasters.com.br/back-end/asp-net-mvc-5-implementando-injecao-de-dependencia-com-unity	
 
 
 ANGULAR
@@ -19,3 +21,4 @@ http://www.bradoncode.com/blog/2013/05/orms-don-reinvent-wheel.html
 https://blog.mantziaris.eu/blog/2016/10/24/the-repository-and-unit-of-work-pattern/
 https://code.msdn.microsoft.com/Dapper-and-Repository-68710cd7
 https://www.c-sharpcorner.com/article/dapper-and-repository-pattern-in-web-api/
+https://codefizzle.wordpress.com/2012/07/26/correct-use-of-repository-and-unit-of-work-patterns-in-asp-net-mvc/

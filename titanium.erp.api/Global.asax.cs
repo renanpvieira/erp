@@ -8,7 +8,7 @@ namespace titanium.erp.api
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            GlobalConfiguration.Configuration.DependencyResolver = (new IocAPIConfig()).Registar();
+            GlobalConfiguration.Configuration.DependencyResolver = Injecao.Registar();
             GlobalConfiguration.Configure(WebAPIConfig.Register);
         }
             

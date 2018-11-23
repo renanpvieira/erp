@@ -65,6 +65,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\titanium.erp.api\titanium.erp.api.csproj">
+      <Project>{cdf01f39-70ee-4aff-8356-abef89690ce9}</Project>
+      <Name>titanium.erp.api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\titanium.erp.data\titanium.erp.data.csproj">
       <Project>{eeb5f3e7-62fe-438d-b8eb-55448f899c7f}</Project>
       <Name>titanium.erp.data</Name>

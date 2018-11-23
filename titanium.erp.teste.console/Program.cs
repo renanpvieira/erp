@@ -7,6 +7,7 @@ using titanium.erp.data;
 using titanium.erp.dominio;
 using titanium.erp.dominio.interfaces.repositorios;
 using MySql.Data.MySqlClient;
+using titanium.erp.api.Configuration;
 
 namespace titanium.erp.teste.console
 {
@@ -15,6 +16,10 @@ namespace titanium.erp.teste.console
         static void Main(string[] args)
         {
 
+           // GlobalConfiguration.Configuration.DependencyResolver = Injecao.Registar();
+
+
+            /*
             var cnn = new MySqlConnection("server=mysql22.redehost.com.br;port=41890;database=teste01;uid=teste01;password=@#Titanium18!@Prod20;SSL Mode=None");
 
             cnn.Open();
@@ -29,9 +34,9 @@ namespace titanium.erp.teste.console
             cnn.Close();
 
             repo.AddAsync(new Usuario { });
+            */
 
 
-         
         }
 
         
